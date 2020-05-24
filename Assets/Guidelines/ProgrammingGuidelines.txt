@@ -1,0 +1,59 @@
+Programming Guidelines
+v1.0
+
+1)Classes:
+	a)1 class per file.
+	b)Use classes ONLY and ALWAYS if the intended usage is defining
+behaviours.
+	c)All non MonoBehaviour classes should always use the
+[System.Serialize]
+
+2)Structures and enums:
+	a)All public structures and enums go inside:
+		a)DataContainer.cs
+	b)Non public strutctures and enums may go inside a class file.
+	c)Use structures ONLY and ALWAYS if the intended usage is data
+storage.
+	d)All structures MUST use [System.Serialize]
+
+3)Variables:
+	a)Variables are created where they are used, and should be stated on
+the begining of the block that its using them.
+	b)ASM Style variable declaration. (int	x,
+						y,
+						z;)
+	c)Explicit variable names (Verbose).
+	d)Camel Notation. (testType)
+	e)Hungary Notation. (int iTestType).
+	f)Public is only for accessing in another class or instance. For
+editor usage use "[SerializeField]".
+	g)If a public variable is not intended for editor usage, then use
+"[HideInInspector]".
+
+4)Data Containers:
+	a)Prefer already defined data containers.
+
+5)Global naming conventions:
+	a)Functions start with lowercase. Always.
+	b)Variables start with lowercase type, then First name letter in
+Upper.
+	c)Classes, structures and enums start with uppercase. Always.
+	d)Privacy accessors must always be explicitly stated (private, public,
+protected).
+
+6)Commenting:
+	a)XML Commenting will be used.
+	b)All functions that do not belong to MonoBehaviour or UnityEngine
+must be XML commented, parameters and return included.
+	c)Class members should always be XML commented, unless they are as
+explicit as they can be. 
+
+7)Code blocks:
+	a)Each code block must be explicitly stated with a "#pragma region".
+
+8)Design patterns:
+	a)Singletons only when there will be an instance of a class.
+	b)Statics only when there will be NO instances of a class.
+	c)Factories and Memory pools for high object instancing.
+	d)Stack based state managers.
+

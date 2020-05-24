@@ -1,0 +1,86 @@
+Project Guidelines
+v1.0
+
+1)Root Folders:
+	a)Scripts
+		a)Editor
+		b)Behaviours
+		c)Managers
+		d)Controllers
+		e)Animation Behaviours
+	b)Visual Assets
+		a)Textures
+			a)UI
+			b)Models
+				a)Diffuse Atlases
+				b)Normal Atlases
+				c)Light Atlases
+		b)Models
+			a)Model Files
+			b)Animations
+		c)Materials
+			a)Model Materials
+			b)Skybox Materials
+			c)Font Materials
+		d)Sprites
+			a)Sprite Files
+			b)Animations
+	c)Plugins
+		a)External
+		b)x86
+		c)x86_64
+	d)Audio Assets
+		a)Music
+		b)FX
+		c)Mixer Components
+	e)Shaders
+		a)Model Shaders
+		b)Effect Shaders
+		c)Particle Shaders
+		d)Skybox Shaders
+		e)Video Shaders
+	f)Scenes
+	g)Streaming Assets
+	h)Resources
+	i)Fonts
+	j)Timeline Animations
+	k)Prefabs
+		a)UI
+		b)Gameplay
+			a)Visual
+			b)Scripts
+	l)Physics Materials
+		a)3D
+		b)2D
+
+2)Naming Conventions:
+	a)Scripts:
+		a)If the script interfaces the player with the world then:
+			Controller_____
+		b)If the script affect visual behaviour or interacts with the
+player in a non direct way:
+			Behaviour_____
+		c)If the script controls gameplay mechanics or orchestrates
+data:
+			Manager____
+		d)Full names for scripts, no abreviations.
+	b)Assets:
+		ProjectInitials_AssetName_Version_(T/F)LibraryReady
+		Example:
+			Project: Testerino
+			Asset name: TT_ASSETX_1.0_F
+	c)Version Changes (x.y_(T/F))
+		a)Minor Changes: y
+		b)Mayor Changes: x
+		Version change on compilation even on fails.
+3)Scene Structure:
+	a)All objects child of: [Origin] (Transform on 0, empty object)
+	b)No "New GameObject"s I.E. ALL OBJECTS MUST BE NAMED.
+
+4)Tags and layers:
+	a)Short names.
+	b)No unused tags.
+	c)Explicit names.
+
+5)Unity version:
+	a)2017.3 (Might change).

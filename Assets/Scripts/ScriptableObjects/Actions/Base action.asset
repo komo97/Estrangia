@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b204a69d5dbe592429e1f9541790d4cf, type: 3}
+  m_Name: Base action
+  m_EditorClassIdentifier: 
+  actionName: Initial world state
+  description: 'Dumpity Dump
+
+'
+  influence:
+    waterVapour: 0
+    carbonDioxide: 0
+    methane: 0
+    nitrousOxide: 0
+    CFCs: 0
+  image: {fileID: 6428118678942935430, guid: ec2bb374629aa50449c4bac29f05949d, type: 3}
+  affectedIndustries: 
+  connectedEvents:
+  - {fileID: 0}
+  uiTransform: {fileID: 0}
+  ammountAccepted: 0
